@@ -76,6 +76,12 @@ body{
 .nav-links a:hover{
     color: #10B981;
 }
+.menu-toggle{
+    display:none;
+    font-size:28px;
+    color:#fff;
+    cursor:pointer;
+}
 
 /*------------HERO SECTION-------------*/
 .hero{
@@ -742,17 +748,6 @@ body{
 
 
 
-/* Mobile */
-
-@media(max-width:768px){
-
-    .achievement-container{
-
-        grid-template-columns:1fr;
-
-    }
-
-}
 
 /* ========== CONTACT ========== */
 
@@ -940,15 +935,6 @@ body{
 
 }
 
-@media(max-width:768px){
-
-    .contact-container{
-
-        grid-template-columns:1fr;
-
-    }
-
-}
 
 /* ===== PROJECT PAGE ===== */
 
@@ -1211,13 +1197,99 @@ font-weight:600;
 }
 
 
+@media (max-width:768px){
 
-@media(max-width:768px){
+    /* ================= NAVBAR ================= */
 
-.project-container{
+    .menu-toggle{
+        display:block;
+    }
 
-grid-template-columns:1fr;
+    .nav-links{
+        position:absolute;
+        top:75px;
+        left:0;
+        width:100%;
+        background:#0F172A;
 
-}
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        gap:20px;
+        padding:20px 0;
+
+        transform:translateY(-150%);
+        transition:0.4s ease;
+    }
+
+    .nav-links.active{
+        transform:translateY(0);
+    }
+
+    /* ================= HERO ================= */
+
+    .hero{
+        flex-direction:column-reverse;
+        text-align:center;
+        padding:120px 20px 60px;
+        gap:40px;
+    }
+
+    .hero-text{
+        width:100%;
+    }
+
+    .hero-image{
+        width:100%;
+    }
+
+    .hero-image img{
+        width:250px;
+        max-width:100%;
+    }
+
+    .hero-text h1{
+        font-size:48px;
+    }
+
+    .hero-text h2{
+        font-size:24px;
+    }
+
+    .hero-text h3{
+        font-size:20px;
+    }
+
+    .greetings{
+        font-size:18px;
+    }
+
+    .buttons{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .social-links,
+    .social-icons{
+        justify-content:center;
+    }
+
+    /* ================= ACHIEVEMENTS ================= */
+
+    .achievement-container{
+        grid-template-columns:1fr;
+    }
+
+    /* ================= CONTACT ================= */
+
+    .contact-container{
+        grid-template-columns:1fr;
+    }
+
+    /* ================= PROJECTS ================= */
+
+    .project-container{
+        grid-template-columns:1fr;
+    }
 
 }
