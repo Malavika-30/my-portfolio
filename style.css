@@ -11,9 +11,8 @@ body{
 
     font-family:'Inter',sans-serif;
        
-    background:#ffffff;
-
-    color:#E5E7EB;
+    background: #F8FFFA;
+    color: #1F2937;
 
 
 }
@@ -29,7 +28,9 @@ body{
 
     padding:20px 8%;
 
-    background:#ffffff;
+    
+    background: #F8FFFA;
+    color: #1F2937;
 
     backdrop-filter:blur(10px);
 
@@ -104,7 +105,7 @@ body{
 
 .hero-text h1{
     font-family:'poppins', sans-serif;
-    font-size: 80px;
+    font-size: 90px;
     margin: 15px 0;
     color: #000000;
 }
