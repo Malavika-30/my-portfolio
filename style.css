@@ -19,35 +19,56 @@ body{
 
 
 /*---------------- NAVIGATION -----------*/
+/*==============================
+        NAVBAR
+==============================*/
 
 .navbar{
+
+    position:fixed;
+
+    top:18px;
+    left:50%;
+
+    transform:translateX(-50%);
+
+    width:92%;
+    max-width:1350px;
 
     display:flex;
     justify-content:space-between;
     align-items:center;
 
-    padding:20px 8%;
+    padding:15px 35px;
 
-    
-    background: #F8FFFA;
-    color: #1F2937;
+    background:rgba(255,255,255,.75);
 
-    backdrop-filter:blur(10px);
+    backdrop-filter:blur(18px);
 
-    border-bottom:1px solid #E5E7EB;
+    border:1px solid rgba(255,255,255,.6);
 
+    border-radius:18px;
 
-    position:sticky;
-
-    top:0;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
 
     z-index:1000;
 
+    transition:.35s ease;
+
 }
-.logo{
-    font-family:'poppins', sans-serif;
-    font-size: 28px;
-    font-weight: 700;
+.logo img{
+
+    width:65px;
+
+    display:block;
+
+    transition:.3s;
+
+}
+
+.logo img:hover{
+
+    transform:scale(1.08);
 
 }
 
@@ -62,21 +83,61 @@ body{
 }
 
 .nav-links{
-    display: flex;
-    list-style: none;
-    gap: 35px;
+
+    display:flex;
+
+    list-style:none;
+
+    gap:38px;
+
 }
 
 .nav-links a{
-    text-decoration: none;
-    color: #000000;
-    font-weight: 500;
-    transition: 0.3s;
+
+    text-decoration:none;
+
+    color:#111827;
+    
+
+    font-weight:500;
+
+    position:relative;
+
+    transition:.3s;
+
+}
+.nav-links a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-7px;
+
+    width:0;
+
+    height:2px;
+
+    background:#16A34A;
+
+    transition:.3s;
+
 }
 
 .nav-links a:hover{
-    color: #10B981;
+
+    color:#16A34A;
+
 }
+
+.nav-links a:hover::after{
+
+    width:100%;
+
+}
+
 .menu-toggle{
     display:none;
     font-size:28px;
@@ -89,8 +150,8 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding:150px 8% 80px;
     
-    padding: 80px 8%;
 
 }
 
@@ -1213,7 +1274,11 @@ font-weight:600;
         top:75px;
         left:0;
         width:100%;
-        background:#0F172A;
+        background:white;
+
+        border-radius:15px;
+
+        box-shadow:0 10px 25px rgba(0,0,0,.08);
 
         display:flex;
         flex-direction:column;
