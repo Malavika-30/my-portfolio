@@ -155,7 +155,7 @@ body{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    min-height:100vh;
+    min-height:110vh;
     padding:140px 8% 80px;
     overflow:hidden;
     background:#f9fffb;
@@ -243,7 +243,7 @@ body{
 
     font-family:"Playfair Display",serif;
 
-    font-size:82px;
+    font-size:96px;
 
     line-height:1.05;
 
@@ -299,9 +299,10 @@ body{
 
     gap:10px;
 
-    padding:16px 30px;
+    padding:18px 36px;
 
-    border-radius:14px;
+    border-radius:15px;
+    
 
     font-weight:600;
 
@@ -452,8 +453,9 @@ body{
 
 .image-card img{
 
-    width:100%;
 
+    width:115%;
+    transform:translateY(15px);
     height:100%;
 
     object-fit:contain;
@@ -461,6 +463,139 @@ body{
     position:relative;
 
     z-index:2;
+}
+/*==============================
+      FLOATING PARTICLES
+==============================*/
+
+.particles{
+
+    position:absolute;
+
+    inset:0;
+
+    pointer-events:none;
+
+    z-index:1;
+
+}
+
+.particles span{
+
+    position:absolute;
+
+    border-radius:50%;
+
+    background:#22C55E;
+
+    opacity:.35;
+
+    animation:floatParticle 8s ease-in-out infinite;
+
+    box-shadow:0 0 20px rgba(34,197,94,.5);
+
+}
+.particles span:nth-child(1){
+
+    width:18px;
+
+    height:18px;
+
+    left:8%;
+
+    top:25%;
+
+}
+
+.particles span:nth-child(2){
+
+    width:12px;
+
+    height:12px;
+
+    left:28%;
+
+    top:68%;
+
+    animation-delay:2s;
+
+}
+
+.particles span:nth-child(3){
+
+    width:22px;
+
+    height:22px;
+
+    right:15%;
+
+    top:18%;
+
+    animation-delay:4s;
+
+}
+
+.particles span:nth-child(4){
+
+    width:16px;
+
+    height:16px;
+
+    right:10%;
+
+    bottom:18%;
+
+    animation-delay:1s;
+
+}
+
+.particles span:nth-child(5){
+
+    width:10px;
+
+    height:10px;
+
+    left:55%;
+
+    top:38%;
+
+    animation-delay:5s;
+
+}
+
+.particles span:nth-child(6){
+
+    width:20px;
+
+    height:20px;
+
+    left:72%;
+
+    bottom:15%;
+
+    animation-delay:3s;
+
+}
+@keyframes floatParticle{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-20px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
 }
 /* ---------- ABOUT ---------- */
 
@@ -1527,8 +1662,9 @@ font-weight:600;
 }
 .image-card img{
 
-    width:100%;
-
+   
+    width:115%;
+    transform:translateY(15px);
     object-fit:contain;
 
     z-index:2;
