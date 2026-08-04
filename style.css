@@ -416,13 +416,13 @@ body{
 
     border-radius:40px;
 
-    background:rgba(255,255,255,.55);
+    background:rgba(255,255,255,.45);
 
     backdrop-filter:blur(18px);
 
     border:1px solid rgba(255,255,255,.8);
 
-    box-shadow:0 30px 70px rgba(0,0,0,.08);
+    overflow:hidden;
 
     display:flex;
 
@@ -430,38 +430,144 @@ body{
 
     align-items:flex-end;
 
-    overflow:hidden;
-}
+    box-shadow:
+        0 30px 70px rgba(0,0,0,.08),
+        0 0 80px rgba(34,197,94,.10);
 
+    animation:cardFloat 5s ease-in-out infinite;
+
+    transition:.4s;
+
+}
+@keyframes cardFloat{
+
+    0%,100%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-12px);
+
+    }
+
+}
+.image-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:
+        0 45px 90px rgba(0,0,0,.12),
+        0 0 120px rgba(34,197,94,.20);
+
+}
 .image-glow{
 
     position:absolute;
 
-    width:480px;
+    width:520px;
 
-    height:480px;
+    height:520px;
 
-    bottom:-180px;
+    bottom:-200px;
 
-    background:radial-gradient(circle,
-    rgba(22,163,74,.28),
-    transparent 70%);
+    left:50%;
+
+    transform:translateX(-50%);
 
     border-radius:50%;
+
+    background:radial-gradient(circle,
+
+        rgba(34,197,94,.35),
+
+        rgba(34,197,94,.12),
+
+        transparent 70%
+
+    );
+
+    filter:blur(35px);
+
+}
+.glass-shine{
+
+    position:absolute;
+
+    inset:0;
+
+    overflow:hidden;
+
+    border-radius:40px;
+
+}
+
+.glass-shine::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:-50%;
+
+    left:-150%;
+
+    width:70%;
+
+    height:200%;
+
+    background:linear-gradient(
+
+        120deg,
+
+        transparent,
+
+        rgba(255,255,255,.45),
+
+        transparent
+
+    );
+
+    transform:rotate(20deg);
+
+    animation:shineMove 6s infinite;
+
+}
+@keyframes shineMove{
+
+    0%{
+
+        left:-150%;
+
+    }
+
+    100%{
+
+        left:180%;
+
+    }
+
 }
 
 .image-card img{
 
-
     width:115%;
-    transform:translateY(15px);
-    height:100%;
 
     object-fit:contain;
 
     position:relative;
 
     z-index:2;
+
+    transition:.5s;
+
+}
+.image-card:hover img{
+
+    transform:scale(1.04);
+
 }
 /*==============================
       FLOATING PARTICLES
