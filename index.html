@@ -21,6 +21,7 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+   <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
     <!---------NAVIGATION-->
@@ -171,7 +172,7 @@
 </section>
 <!--------------SKILLS-------------->
 <section class="skills" id="skills">
-
+<div class="floating-bg"></div>
     <h2 class="skills-title">
         MY <span>SKILLS</span>
     </h2>
@@ -333,7 +334,7 @@
 </section>
 <!-----------EXPERIENCE---------->
 <section class="experience" id="experience">
-
+<div class="floating-bg"></div>
     <h2 class="experience-title">
         MY <span>EXPERIENCE</span>
     </h2>
@@ -384,7 +385,7 @@
 </section>
 <!------EDUCATION---------->
 <section class="education" id="education">
-
+<div class="floating-bg"></div>
     <h2 class="section-title">Education</h2>
 
     <div class="education-container">
@@ -456,7 +457,7 @@
 
 <!-- ACHIEVEMENTS SECTION -->
 <section class="achievements" id="achievements">
-
+<div class="floating-bg"></div>
 
     <h2 class="section-title">
         Achievements & Certifications
@@ -595,8 +596,8 @@
 </section>
 <!-----------CONTACT------------->
 <section class="contact" id="contact">
-
-    <h2 class="section-title">Contact Me</h2>
+<div class="floating-bg"></div>
+    <h2 class="section-title">Get in touch</h2>
 
     <p class="contact-subtitle">
         Let's connect and create something amazing together.
@@ -754,6 +755,94 @@ if(slider && next && prev){
 
 
 }
+
+
+</script>
+<script>
+
+
+// ===============================
+// SCROLL REVEAL ANIMATION
+// ===============================
+
+
+ScrollReveal({
+
+    distance:'60px',
+    duration:1200,
+    delay:200,
+    reset:false
+
+});
+
+
+
+ScrollReveal().reveal(
+'.section-title',
+{
+    origin:'top'
+}
+);
+
+
+
+ScrollReveal().reveal(
+'.skill-box',
+{
+    origin:'bottom',
+    interval:150
+}
+);
+
+
+
+ScrollReveal().reveal(
+'.experience-card',
+{
+    origin:'left'
+}
+);
+
+
+
+ScrollReveal().reveal(
+'.education-card',
+{
+    origin:'right',
+    interval:200
+}
+);
+
+
+
+ScrollReveal().reveal(
+'.achievement-card',
+{
+    origin:'bottom',
+    interval:200
+}
+);
+
+
+
+ScrollReveal().reveal(
+'.contact-left,.contact-form',
+{
+    origin:'bottom',
+    interval:200
+}
+);
+
+
+
+ScrollReveal().reveal(
+'.project-card',
+{
+    origin:'bottom',
+    interval:200
+}
+);
+
 
 
 </script>
