@@ -1323,6 +1323,7 @@ body{
     text-align:center;
     font-size:42px;
     margin-bottom:50px;
+    font-family: "Playfair Display",serif;
 
 }
 
@@ -1482,6 +1483,7 @@ body{
     padding:100px 8%;
 
     background:#F0FDF4;
+    font-family: "Playfair Display",serif;
 
 }
 
@@ -1648,6 +1650,7 @@ body{
     padding:100px 8%;
 
     background:#F8FFFC;
+    font-family: "Playfair Display",serif;
 
 }
 
@@ -1866,6 +1869,7 @@ overflow:hidden;
     padding:100px 8%;
 
     background:#F0FDF4;
+    
 
 }
 
