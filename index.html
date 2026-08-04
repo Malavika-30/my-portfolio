@@ -37,7 +37,7 @@
           <li><a href="#skills">Skills</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#education">Education</a></li>
-          <li><a href="#achievments">Achievements</a></li>
+          <li><a href="#achievements">Achievements</a></li>
           <li><a href="#contact">Contact</a></li>
 
        </ul>
@@ -455,94 +455,130 @@
 </section>
 
 <!-- ACHIEVEMENTS SECTION -->
-
-<section class="achievements" id="achievements">
-
-    <h2 class="section-title">Achievements & Certifications</h2>
+<div class="achievement-wrapper">
 
 
-    <div class="achievement-container">
+<button class="achievement-btn prev">
+    <i class="fa-solid fa-chevron-left"></i>
+</button>
 
 
-        <!-- Hugging Face -->
-
-        <div class="achievement-card">
-
-            <div class="achievement-icon">
-                🏆
-            </div>
-
-            <h3>Hugging Face Smol Course</h3>
-
-            <h4>Hugging Face</h4>
-
-            <p>
-                Completed AI training focused on Large Language Models,
-                Transformers, and modern AI model development.
-            </p>
-
-            <a href="#" target="_blank">
-                View Certificate ↗
-            </a>
-
-        </div>
+<div class="achievement-container">
 
 
+<div class="achievement-card">
 
-        <!-- Internship -->
 
-        <div class="achievement-card">
+<div class="achievement-icon">
+🏆
+</div>
 
-            <div class="achievement-icon">
-                💼
-            </div>
 
-            <h3>R&D Internship</h3>
+<h3>
+Hugging Face Smol Course
+</h3>
 
-            <h4>Alagata</h4>
 
-            <p>
-                Worked on AI/ML based solutions including model development,
-                data preprocessing, and research-oriented projects.
-            </p>
+<h4>
+Hugging Face
+</h4>
 
-            <a href="#" target="_blank">
-                View Certificate ↗
-            </a>
 
-        </div>
+<p>
+Completed AI training focused on
+LLMs, Transformers and modern AI
+model development.
+</p>
+
+
+<a href="#">
+View Certificate
+</a>
+
+
+</div>
 
 
 
-        <!-- Chess -->
 
-        <div class="achievement-card">
-
-            <div class="achievement-icon">
-                ♟️
-            </div>
-
-            <h3>Chess Achievement</h3>
-
-            <h4>Chess Certification</h4>
-
-            <p>
-                Achievement in chess demonstrating strategic thinking,
-                concentration, and problem-solving skills.
-            </p>
-
-            <a href="#" target="_blank">
-                View Certificate ↗
-            </a>
-
-        </div>
+<div class="achievement-card">
 
 
+<div class="achievement-icon">
+💼
+</div>
 
-    </div>
+
+<h3>
+R&D Internship
+</h3>
 
 
-</section>
+<h4>
+Alagata
+</h4>
+
+
+<p>
+Worked on AI/ML solutions,
+model development and data
+preprocessing.
+</p>
+
+
+<a href="#">
+View Certificate
+</a>
+
+
+</div>
+
+
+
+
+
+<div class="achievement-card">
+
+
+<div class="achievement-icon">
+♟️
+</div>
+
+
+<h3>
+Chess Achievement
+</h3>
+
+
+<h4>
+Chess Certification
+</h4>
+
+
+<p>
+Achievement demonstrating
+strategic thinking and
+problem-solving skills.
+</p>
+
+
+<a href="#">
+View Certificate
+</a>
+
+
+</div>
+
+
+</div>
+
+
+<button class="achievement-btn next">
+<i class="fa-solid fa-chevron-right"></i>
+</button>
+
+
+</div>
 <!-----------CONTACT------------->
 <section class="contact" id="contact">
 
@@ -641,10 +677,14 @@
 </footer>
 
 <script src="script.js"></script>
+
 <script>
+
+// Cursor glow
 
 const hero = document.querySelector(".hero");
 const glow = document.querySelector(".cursor-glow");
+
 
 hero.addEventListener("mousemove", (e) => {
 
@@ -655,17 +695,52 @@ hero.addEventListener("mousemove", (e) => {
 
 });
 
+
 hero.addEventListener("mouseleave", () => {
 
     glow.style.opacity = "0";
 
 });
 
+
 hero.addEventListener("mouseenter", () => {
 
     glow.style.opacity = "1";
 
 });
+
+
+
+
+// Achievement Slider
+
+const slider = document.querySelector(".achievement-container");
+
+const next = document.querySelector(".next");
+
+const prev = document.querySelector(".prev");
+
+
+
+if(slider && next && prev){
+
+
+    next.onclick = () => {
+
+        slider.scrollLeft += 350;
+
+    };
+
+
+    prev.onclick = () => {
+
+        slider.scrollLeft -= 350;
+
+    };
+
+
+}
+
 
 </script>
 </body>

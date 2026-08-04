@@ -1638,6 +1638,9 @@ body{
 }
 
 /* ============ ACHIEVEMENTS ============ */
+/* =========================
+   ACHIEVEMENT SLIDER
+========================= */
 
 
 .achievements{
@@ -1650,13 +1653,13 @@ body{
 
 
 
-.achievement-container{
+.achievement-wrapper{
 
-    display:grid;
+    display:flex;
 
-    grid-template-columns:repeat(2,1fr);
+    align-items:center;
 
-    gap:30px;
+    gap:25px;
 
     margin-top:50px;
 
@@ -1664,19 +1667,52 @@ body{
 
 
 
+.achievement-container{
+
+    display:flex;
+
+    gap:30px;
+
+    overflow:hidden;
+
+    scroll-behavior:smooth;
+
+}
+
+
+
 .achievement-card{
 
-    background:white;
+
+    min-width:330px;
+
 
     padding:35px;
 
-    border-radius:20px;
+
+    background:
+
+    rgba(255,255,255,.65);
+
+
+    backdrop-filter:blur(15px);
+
+
+    border-radius:25px;
+
+
+    border:1px solid rgba(34,197,94,.2);
+
 
     text-align:center;
 
-    box-shadow:0 8px 20px rgba(0,0,0,0.08);
 
-    transition:0.3s ease;
+    box-shadow:
+
+    0 10px 30px rgba(0,0,0,.08);
+
+
+    transition:.4s;
 
 }
 
@@ -1684,9 +1720,14 @@ body{
 
 .achievement-card:hover{
 
-    transform:translateY(-8px);
 
-    box-shadow:0 15px 30px rgba(16,185,129,0.15);
+    transform:translateY(-10px);
+
+
+    box-shadow:
+
+    0 20px 40px rgba(34,197,94,.2);
+
 
 }
 
@@ -1694,11 +1735,14 @@ body{
 
 .achievement-icon{
 
-    width:65px;
 
-    height:65px;
+    width:70px;
+
+    height:70px;
+
 
     margin:auto;
+
 
     display:flex;
 
@@ -1706,11 +1750,15 @@ body{
 
     align-items:center;
 
-    background:#D1FAE5;
+
+    background:#DCFCE7;
+
 
     border-radius:50%;
 
-    font-size:32px;
+
+    font-size:35px;
+
 
     margin-bottom:20px;
 
@@ -1722,8 +1770,6 @@ body{
 
     font-size:22px;
 
-    color:#111827;
-
     margin-bottom:10px;
 
 }
@@ -1732,9 +1778,7 @@ body{
 
 .achievement-card h4{
 
-    color:#10B981;
-
-    margin-bottom:15px;
+    color:#22c55e;
 
 }
 
@@ -1742,11 +1786,11 @@ body{
 
 .achievement-card p{
 
+    margin:20px 0;
+
     color:#6B7280;
 
     line-height:1.7;
-
-    margin-bottom:25px;
 
 }
 
@@ -1754,32 +1798,67 @@ body{
 
 .achievement-card a{
 
+
     display:inline-block;
 
-    text-decoration:none;
 
-    background:#10B981;
+    background:#22c55e;
+
 
     color:white;
 
+
+    text-decoration:none;
+
+
     padding:10px 22px;
+
 
     border-radius:25px;
 
-    font-weight:600;
 
 }
 
 
 
-.achievement-card a:hover{
 
-    background:#059669;
+/* Arrow buttons */
+
+
+.achievement-btn{
+
+
+    width:45px;
+
+    height:45px;
+
+
+    border-radius:50%;
+
+
+    border:none;
+
+
+    background:#22c55e;
+
+
+    color:white;
+
+
+    cursor:pointer;
+
+
+    font-size:18px;
 
 }
 
 
 
+.achievement-btn:hover{
+
+    background:#15803d;
+
+}
 
 /* ========== CONTACT ========== */
 
