@@ -1244,6 +1244,62 @@ body{
     }
 
 }
+/* Official icon colors */
+
+.skill-icons .fa-python{
+    color:#3776AB;
+}
+
+.skill-icons .fa-html5{
+    color:#E34F26;
+}
+
+.skill-icons .fa-css3-alt{
+    color:#1572B6;
+}
+
+.skill-icons .fa-js{
+    color:#F7DF1E;
+}
+
+.skill-icons .fa-github{
+    color:#181717;
+}
+
+
+/* AI icons */
+
+.skill-icons .fa-robot,
+.skill-icons .fa-brain,
+.skill-icons .fa-microchip,
+.skill-icons .fa-language,
+.skill-icons .fa-network-wired{
+
+    color:#22c55e;
+
+}
+
+
+/* Data icons */
+
+.skill-icons .fa-database,
+.skill-icons .fa-chart-simple,
+.skill-icons .fa-table{
+
+    color:#16a34a;
+
+}
+
+
+/* Tools */
+
+.skill-icons .fa-code,
+.skill-icons .fa-book-open,
+.skill-icons .fa-cloud{
+
+    color:#22c55e;
+
+}
 
 /* ========= EXPERIENCE ========= */
 
