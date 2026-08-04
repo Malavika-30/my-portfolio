@@ -145,7 +145,6 @@ body{
     cursor:pointer;
 }
 
-/*------------HERO SECTION-------------*/
 /*=========================================
               HERO SECTION
 =========================================*/
@@ -596,6 +595,39 @@ body{
 
     }
 
+}
+/*=========================================
+          MOUSE FOLLOW GLOW
+=========================================*/
+
+.cursor-glow{
+
+    position:absolute;
+
+    width:350px;
+
+    height:350px;
+
+    border-radius:50%;
+
+    background:radial-gradient(
+        circle,
+        rgba(34,197,94,.18) 0%,
+        rgba(34,197,94,.08) 40%,
+        transparent 75%
+    );
+
+    pointer-events:none;
+
+    transform:translate(-50%,-50%);
+
+    z-index:1;
+
+    transition:
+        left .08s linear,
+        top .08s linear;
+
+    filter:blur(25px);
 }
 /* ---------- ABOUT ---------- */
 
