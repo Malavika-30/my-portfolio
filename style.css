@@ -1303,23 +1303,14 @@ body{
 
 /* ========= EXPERIENCE ========= */
 /* =====================
-    EXPERIENCE SECTION
+     EXPERIENCE
 ===================== */
 
 
 .experience{
 
     padding:100px 8%;
-
-    background:
-
-    radial-gradient(
-    circle at right,
-    rgba(34,197,94,0.12),
-    transparent 35%
-    ),
-
-    #ffffff;
+    background:#ffffff;
 
 }
 
@@ -1328,11 +1319,10 @@ body{
 .experience-title{
 
     text-align:center;
-
     font-size:42px;
+    margin-bottom:50px;
 
 }
-
 
 
 .experience-title span{
@@ -1343,156 +1333,52 @@ body{
 
 
 
-.experience-container{
-
-    display:flex;
-
-    justify-content:center;
-
-    margin-top:50px;
-
-}
-
-
-/* Experience Card - Larger Version */
 
 .experience-card{
 
-    width:520px;
+    max-width:650px;
 
-    min-height:360px;
+    margin:auto;
 
-    padding:45px 45px;
-
-
-    text-align:center;
-
-
-    border-radius:30px;
+    padding:35px 40px;
 
 
     background:
 
-    rgba(255,255,255,0.55);
+    rgba(255,255,255,0.7);
 
 
-    backdrop-filter:blur(18px);
+    border-radius:20px;
 
 
-    border:
-
-    1px solid rgba(34,197,94,0.25);
-
+    border:1px solid rgba(34,197,94,0.25);
 
 
     box-shadow:
 
-    0 12px 35px rgba(0,0,0,0.08);
+    0 10px 30px rgba(0,0,0,0.08);
 
 
-    transition:.4s ease;
+    transition:.3s ease;
 
 }
+
 
 
 .experience-card:hover{
 
-
-    transform:translateY(-10px);
-
-
-    border-color:#22c55e;
-
+    transform:translateY(-8px);
 
     box-shadow:
 
-    0 20px 40px rgba(34,197,94,0.25);
-
-
-}
-
-
-.experience-icon{
-
-    font-size:50px;
-
-    color:#22c55e;
-
-    margin-bottom:25px;
-
-}
-
-
-
-.experience-card h3{
-
-    font-size:28px;
-
-    margin-bottom:8px;
-
-}
-
-
-.experience-card h4{
-
-    font-size:20px;
-
-    color:#22c55e;
-
-    margin-bottom:25px;
-
-}
-.experience-card p{
-
-    font-size:16px;
-
-    line-height:1.8;
-
-    color:#555;
-
-}
-
-
-
-.experience-buttons{
-
-
-    display:flex;
-
-    justify-content:center;
-
-    gap:15px;
-
-    margin-top:25px;
+    0 15px 35px rgba(34,197,94,0.2);
 
 }
 
 
 
 
-.experience-buttons a{
 
-    padding:12px 22px;
-
-    border-radius:25px;
-
-    font-size:14px;
-
-}
-
-
-
-
-.experience-buttons a:hover{
-
-
-    background:#16a34a;
-
-
-    transform:translateY(-3px);
-
-
-}
 .experience-header{
 
     display:flex;
@@ -1501,76 +1387,105 @@ body{
 
     align-items:flex-start;
 
-    margin-bottom:25px;
+    margin-bottom:20px;
 
 }
+
 
 
 .experience-header h3{
 
-    font-size:28px;
+    font-size:26px;
 
-    margin:0;
+    margin-bottom:8px;
 
 }
+
 
 
 .experience-header h4{
 
+    font-size:18px;
+
     color:#22c55e;
-
-    margin-top:8px;
-
-    font-size:20px;
 
 }
 
 
 
-.experience-date{
+.experience-header span{
 
-    font-size:14px;
+    background:#22c55e;
 
-    color:#555;
+    color:white;
 
-    padding:7px 18px;
+    padding:6px 18px;
 
     border-radius:20px;
 
-    background:rgba(34,197,94,0.12);
-
-    white-space:nowrap;
-
-}
-@media(max-width:600px){
-
-.experience{
-
-    padding:70px 20px;
+    font-size:14px;
 
 }
 
 
-.experience-title{
 
-    font-size:32px;
+
+.experience-card p{
+
+    color:#555;
+
+    line-height:1.7;
+
+    font-size:15px;
 
 }
 
 
-.experience-card{
 
-    width:100%;
-
-}
 
 
 .experience-buttons{
 
-    flex-direction:column;
+    margin-top:25px;
+
+    display:flex;
+
+    gap:15px;
 
 }
 
+
+
+.experience-buttons a{
+
+
+    text-decoration:none;
+
+    background:#22c55e;
+
+    color:white;
+
+
+    padding:10px 22px;
+
+
+    border-radius:8px;
+
+
+    font-size:14px;
+
+
+    transition:.3s;
+
+}
+
+
+
+.experience-buttons a:hover{
+
+    background:#16a34a;
+
+    transform:translateY(-3px);
 
 }
 /* ============ EDUCATION ============ */
